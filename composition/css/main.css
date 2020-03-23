@@ -188,8 +188,8 @@ hr {
   font-size: 13px;
   cursor: pointer;
 }
-.players {
-  margin-bottom: 35px;
+.bottom {
+  margin-bottom: 50px;
 }
 .name__players {
   margin-bottom: 5px;
