@@ -69,6 +69,8 @@ hr {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-bottom: 15px;
+
 }
 
 /* Hide the images by default */
@@ -133,6 +135,7 @@ hr {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-bottom: 33px
 }
 
 .active, .dot:hover {
@@ -155,4 +158,68 @@ hr {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+// Section Our Services
+// 
+
+.services {
+	margin-top: 40px;
+}
+
+.maintext {
+	text-align: center;
+	padding: 5px 15px ;
+	background-color: #e2494b;
+	width: 180px;
+	margin: 0 auto;
+	border-radius: 9px;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 396px;
+			height: 1px;
+			position: absolute;
+			background: #c3c3c3;
+			left: -220%;
+			top:50%;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 396px;
+			height: 1px;
+			position: absolute;
+			background: #c3c3c3;
+			left: 100%;
+			top:50%;
+		}
+}
+
+.coll {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+
+.col-text {
+ font-weight: 400;
+ line-height: 20.8px;
+ font-size: 14px;
+ margin: 0;
+}
+
+.col-text_end {
+	color: red;
+	font-size: 13px;
+	cursor: pointer;
 }
