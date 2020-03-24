@@ -26,6 +26,7 @@
   text-decoration: none;
   margin-right: 19px;
   text-transform: uppercase;
+  color: #fff;
 }
 .header__menu .nav__bar a:hover {
   color: #ee9395;
@@ -194,4 +195,9 @@ hr {
 .name__players {
   margin-bottom: 5px;
   font-size: 13px;
+}
+footer {
+  margin: -8px;
+  height: 417px;
+  background-color: #e2e2e2;
 }
