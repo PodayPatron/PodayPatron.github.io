@@ -246,9 +246,69 @@ hr {
 
 // FOOTER
 
-footer {
+.footer {
 margin: -8px;
 height: 417px;
 background-color: #e2e2e2;
+}
 
+.footer__block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__item {
+	margin-top: 30px;
+
+}
+
+.footer__item-name{
+	font-size: 18px;
+	margin-top: 25px;
+	padding-bottom: 30px;
+}
+
+strong {
+	color: red;
+}
+
+.footer__img {
+	margin-top: 28px;
+	float: left;
+	margin-right: 33px;
+}
+
+
+.footer__text {
+
+}
+
+.clearfix {
+  overflow: auto;
+
+  &::after {
+  	content: "";
+  	clear: both;
+  	display: table;
+  }
+}
+
+
+
+.details_1, .second__text{
+	font-size: 14px ;
+	color: #999999 ;
+}
+
+.contact__name, .contact__email {
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.button {
+	padding: 7px 18px;
+	border-radius: 7px;
+	background-color: red ;
+	color: #fff;
+	font-weight: 700;
 }
