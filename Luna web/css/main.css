@@ -1,0 +1,945 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*    Header 
+===================  */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*     Container  
+===========================  */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*  Navigation
+==========================  */
+.nav {
+    font-size: 16px;
+}
+.nav__link {
+    color: #d0cecf;
+    text-decoration: none;
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 9px;
+}
+.burger {
+    display: none ;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+
+/* Button search
+=========================== */
+.btn {
+    padding: 12px 46px;
+    border-radius: 30px;
+    background-color: #2e8df7;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*   Intro  
+========================== */
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url("../assets/background.jpeg") center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 15px;
+    
+}
+.intro__word{
+    color:#4ba9ff;
+}
+.intro__subtitle {
+    color: #d0d1d0;
+    line-height: 1.6;
+    font-weight: 100;
+    margin-bottom: 45px;
+    font-size: 16px;
+}
+.intro__btn {
+    text-transform: uppercase;
+    display: inline;
+    vertical-align: top;
+    margin:  0 auto;
+    margin-left: 20px;
+
+    text-decoration: none;
+    padding: 9px 31px;
+    border: 3px solid #77777d;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.intro__btn:hover {
+    background-color: #2e8df7;
+    border: 3px solid #2e8df7;
+    transition: 0.2s linear;
+}
+
+/* Arrow bottom 
+===============================*/
+.arrowed {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow {
+	/* more triangle */
+	height: 15px; width: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-width: 2px 2px 0 0;
+	transform: rotate(135deg);
+}
+
+.arrow:before, .arrow:after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 16px; width: 16px;
+	border-width: 3px 3px 0 0;
+}
+
+.arrow:before {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-width: 2px 2px 0 0;
+	/* top - distance minus border */
+	top: 8px; left: -10px;
+}
+
+.arrow:after {
+	border: 1px solid #499fee;
+	border-width: 2px 2px 0 0;
+	/* top - distance plus border */
+	top: -12px; left: 9px;
+}
+
+/* About
+=================================== */
+.about__inner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.about__slogan {
+    font-size: 48px;
+    color: #40485a;
+    font-weight: 100;
+}
+
+.about__slogan::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    max-width: 70px;
+
+    display: block;
+    background-color: #4a24a8;
+    margin-top: 30px;
+}
+
+.about__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6a707d;
+}
+
+.about__img {
+    display: flex;
+    justify-content: center; 
+    margin-top: 95px;  
+    overflow: hidden;
+}
+.about__img > img {
+    width: 100%;
+    max-width: 375px;
+}
+
+/*  What  we do
+================================ */
+.what {
+    margin-top: 100px;
+}
+.what__slogan {
+    text-align: center;
+}
+.what__slogan::after{
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 81px;
+}
+
+.what__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: baseline;
+    margin-bottom: 55px;
+}
+
+.what__item {
+    
+    text-align: center;
+    padding: 50px 40px;
+    
+}
+.what__item:hover {
+    transform: translate3d(0px, -20px, 0px);
+    transition: .3s linear;
+    box-shadow: 0 20px 35px #e6e7ea;
+    /* filter: drop-shadow(0px 0px 0px #0d68c4); */
+    
+}
+
+.what__item img:hover {
+    filter: drop-shadow(0px 0px 0px #1189f6);
+    
+}  
+
+.item__logo {
+    color: #edeef0 ;
+    margin-bottom: 30px;
+}
+.sepia {
+    height: 146px;
+}
+
+.item__name {
+    text-transform: uppercase;
+    color: #40485a;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.item__text {
+    color: #6a707d;
+}
+
+.btn__show {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    
+}
+.btn__show > a {
+    text-decoration: none;
+    color: #4ca9ff;
+    
+}
+.btn__show::after {
+    content: '';
+    height: 3px;
+    display: block;
+
+    width: 100%;
+    max-width: 112px;
+    background-color: #4ca9ff;
+    margin: 0 auto ;
+    margin-bottom: 75px;
+}
+
+/*  Payme 
+==================================*/
+.payme {
+    background: url(../assets/pay_me/payme_background.jpeg) 
+    center center ;
+    width: 100%;
+    height: 700px;
+}
+
+.payme__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.payme__title {
+    position: relative;
+    margin-top: 125px; 
+}
+.payme__slogan {
+    font-size: 62px;
+    font-weight: 300;
+    margin-bottom: 22px;
+    color: #fff;
+    
+}
+.payme__text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 62px;
+    color: #c7c9f9;
+}
+
+.payme__btn {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.payme__btn:hover{
+    box-shadow: 0 22px 45px #6b68cf;
+    transition: .1s linear;
+}
+
+.screen__item {
+    box-shadow: 0 30px 20px #3c207e;
+    border-radius: 8px;
+}
+
+.screen__pay{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+
+.screen__log {
+    position: absolute;
+    top: 32%;
+    left: 82%;
+}
+
+.screen__item img {
+    height: 356px;
+}
+
+/*  Pay Slider 
+========================= */
+.pay__slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 190px;
+    border-top: 2px solid #7866c1;
+    
+}
+
+.slider__item {
+    width: 24%;
+    padding-top: 30px;
+    font-size: 17px;
+    color: #9390cb;
+    position: relative;
+}
+h4 {
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 24px;
+}
+.slider__item.active::before {
+    content: '';
+    display: block;
+    width: 268px;
+    height: 3px;
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 1;
+
+    background-color: #fff;
+}
+
+/* Twiter coments
+================================= */
+ .twiter__slider {
+    height: 540px;
+    /* position: relative; */
+}
+
+.twitter__coments{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comments {
+    margin-top: 40px;
+    padding: 50px 60px;
+    box-shadow: 0 15px 20px 5px #e7e8ea;
+}
+.twiter__text {
+    text-align: center;
+    font-size: 24px;
+    color: #40485a;
+}
+.twiter__account {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.account__name {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* Footer 
+===============================*/
+.footer {
+    background: url(../assets/pay_me/payme_background.jpeg)
+    center center ;
+    height: 352px;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.footer__inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.footer__text {
+    color: #cfd2ff;
+    font-size: 18px;
+    margin-top: 20px;
+
+    line-height: 1.5;
+
+}
+
+.footer__btn {
+    margin-top: 60px;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.line__text {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.line::before {
+    content: '';
+    height: 1px;
+    background-color: #785bab;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    bottom: 33px;
+}
+.fa-heart {
+    color: #399ffe;
+}
+
+
+
+
+
+
+@media (max-width: 1230px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    /* About us */
+
+    .about__img > img {
+        width: 100%;
+        max-width: 249px;
+    }
+    .about__slogan {
+        font-size: 45px;
+    }
+    .about__text {
+        font-size: 15px;
+    }
+
+    /* Payme mobile app */
+
+    .payme__slogan  {
+        font-size: 58px;
+    }
+    .payme__text  {
+        font-size: 16px;
+    }
+    .slider__item {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    .screen__item {
+        max-width: 150px;
+    }
+    .slider__item.active::before {
+        width: 230px;
+    }
+
+    /* Footer */
+
+    .line  {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        max-width: 900px;
+    }
+    /* Intro */
+    .btn {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+    .intro__title {
+        font-size: 69px;
+    }
+    .intro__subtitle {
+        font-size: 14px;
+    }
+    .intro__btn {
+        font-size: 13px;
+    }
+
+    /* About us */
+    .about__slogan {
+        font-size: 40px;
+    }
+    .about__text {
+        font-size: 13px;
+    }
+    .about__img > img {
+        width: 100%;
+        max-width: 195px;
+    }
+
+    /* What we do */
+    .sepia {
+        height: 115px;
+    }
+    .item__name {
+        font-size: 14px;
+    }
+    .item__text {
+        font-size: 12px;
+    }
+    .btn__show > a {
+        font-size: 14px;
+    }
+    .btn__show::after {
+        max-width: 84px;
+    }
+
+    /* Payme mobile app */
+
+    .payme__slogan  {
+        font-size: 51px;
+    }
+    .payme__text  {
+        font-size: 13px;
+    }
+    .slider__item {
+        font-size: 12px;
+    }
+    .payme__btn {
+        font-size: 11px;
+    }
+    h4 {
+        font-size: 17px;
+    }
+    .screen__item {
+        max-width: 140px;
+    }
+    .slider__item.active::before {
+        width: 100%;
+    }
+
+    /* twitter slifer */
+    .twiter__text {
+        font-size: 19px;
+    }
+    .account__name  {
+        font-size: 14px;
+    }
+    .account__logo {
+        width: 50px;
+    }
+
+    /* Footer */
+
+    .line  {
+        max-width: 900px;
+    }
+    .footer__text  {
+        font-size: 15px;
+    }
+    .footer__logo-luna {
+        width: 100px;
+    }
+    .line__text {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        max-width: 700px;
+    }
+    /* Intro */
+    .header__logo {
+        width: 80px;
+    }
+    .button__search {
+        margin: 0;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+    .nav {
+        font-size: 14px;
+    }
+    .intro__title {
+        font-size: 53px;
+    }
+    .intro__subtitle {
+        font-size: 13px;
+    }
+    .intro__btn {
+        font-size: 10px;
+    }
+
+    /* About us */
+    .about__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    
+    }
+    .about__img > img {
+        max-width: 240px;
+        padding: 20px 0px;
+    }
+    .about__slogan {
+        font-size: 35px;
+    }
+    .about__text {
+        font-size: 14px;
+    }
+    .about__slogan::after {
+        max-width: 60px;
+        height: 2px;
+    }
+
+    /* What we do */
+    .what__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .what__item {
+    }
+    .sepia {
+        height: 80px;
+    }
+    .item__name {
+        font-size: 15px;
+    }
+    .item__text {
+        font-size: 14px;
+    }
+    .btn__show > a {
+        font-size: 14px;
+    }
+    .btn__show::after {
+        max-width: 84px;
+    }
+
+/* Payme mobile */
+    .payme__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .payme__title {
+        margin-top: 90px;
+    }    
+    .payme__slogan  {
+        font-size: 40px;
+    }
+    .payme__text  {
+        font-size: 13px;
+    }
+    .pay__slider{
+        margin-top: 30px ;
+    }
+    .slider__item {
+        font-size: 11px;
+    }
+    .button__pay {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .payme__btn {
+        font-size: 10px;
+    }
+    .screen__item {
+        position: static;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    .screen__item {
+        max-width: 120px;
+    }
+    .pay__screen {
+        position: sticky;
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*      twitter slifer     */
+    .twitter__bird {
+        width: 40px;
+    }
+    .twiter__text {
+        font-size: 17px;
+    }
+    .account__name  {
+        font-size: 13px;
+    }
+    .account__logo {
+        width: 45px;
+    }
+
+    /*      Footer   */
+    .line  {
+        max-width: 700px;
+    }
+    .footer__text  {
+        font-size: 14px;
+    }
+    .footer__logo-luna {
+        width: 95px;
+    }
+    .line__text {
+        font-size: 11px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    /* Intro */
+    body {
+        /* overflow-x: hidden; */
+    }
+
+    /*  NAVIGATION */
+    .nav  {
+        display: ;
+        position: absolute;
+        width: 100%;
+        top: 11vh;
+        background-color: #212522;
+        text-align: center;
+        /* transform: translateX(100%);     */
+        transition: .5s ease-in ;
+        display: none;
+    }
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 20px 20px;
+        opacity: 0;
+        font-size: 18px;
+        
+    }
+    .nav-active {
+        /* transform: translateX(0%); */
+        display: block;
+    }
+    /*  Burger Animation */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+
+    .burger {
+        display: block;
+    }
+
+    /* About us */
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__slogan {
+        margin-bottom: 40px;
+    }
+    .about__slogan::after {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .about__text {
+        font-size: 12px;
+    }
+
+    /* What we do */
+    
+    /* Payme mobile */
+    .slider__item-title {
+        display: none;
+    }
+
+    /* twitter slider */
+    .twiter__text {
+        font-size: 15px;
+    }
+
+    /*      Footer   */
+    .footer__inner {
+        flex-direction: column;
+    }
+    .line  {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__text  {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    /* Intro  */
+    .intro__title  {
+        font-size: 47px;
+    }
+
+    /* payme mobile app */
+    .payme__slogan {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+
+    /* twitter slider */
+    .twiter__slider {
+        height: 460px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Intro */
+    .intro__subtitle {
+        padding: 0 20px;
+    }
+
+    /* about us */
+    .about__inner {
+        margin-top: 50px;
+    }
+    .about__text {
+        padding: 0 20px;
+    }
+
+    /* payme mobile app */
+    .payme {
+        padding: 0 10px;
+    }
+    .payme__title {
+        margin-top: 30px;
+    }
+
+
+
+    /* footer */
+    .footer {
+        padding: 0 10px;
+    }
+}
